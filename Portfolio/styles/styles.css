@@ -77,16 +77,7 @@ section {
 
 .active {
   display: block;
-  -webkit-animation: scaleAnim 1s ease-in-out;
-          animation: scaleAnim 1s ease-in-out;
-}
-@-webkit-keyframes scaleAnim {
-  0% {
-    transform: translateY(-100%) scaleY(0);
-  }
-  100% {
-    transform: translateY(0%) scaleY(1);
-  }
+  animation: scaleAnim 1s ease-in-out;
 }
 @keyframes scaleAnim {
   0% {
@@ -290,12 +281,7 @@ section {
 }
 
 .about-stats {
-  padding-bottom: 4rem;
-}
-.about-stats .progress-bars {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 2rem;
+  position: relative;
 }
 .about-stats .progress-bars .progress-bar {
   display: flex;
@@ -305,7 +291,7 @@ section {
   font-weight: 600;
   color: var(--color-secondary);
   text-transform: uppercase;
-  padding: 10%;
+  padding: 5%;
 }
 
 .stat-title {
@@ -342,7 +328,7 @@ section {
   padding-top: 3.5rem;
 }
 .contact-content-con .left-contact {
-  flex: 2;
+  flex: 1;
 }
 .contact-content-con h4 {
   margin-bottom: 2rem;
@@ -415,4 +401,85 @@ section {
   font-size: 1.4rem;
   color: var(--color-grey-2);
   pointer-events: none;
+}
+
+@media screen and (max-width: 725px) {
+  header {
+    padding: 0;
+  }
+  header .right-header {
+    padding: 0 !important;
+  }
+  .controls {
+    left: auto;
+    right: 0;
+    flex-direction: column;
+    justify-content: center;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+  }
+  .theme-button {
+    width: 50px;
+    height: 50px;
+  }
+  .header-content {
+    grid-template-columns: 1fr;
+  }
+  .right-header {
+    grid-row: 1;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .right-header .name {
+    font-size: 2rem !important;
+  }
+  .header-content .left-header .image {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .about-container {
+    grid-template-columns: 1fr;
+  }
+  .about-container .right-about {
+    grid-template-columns: 1fr;
+    padding-top: 0 !important;
+  }
+  .about-container .section {
+    padding: 2rem 2.5rem !important;
+  }
+  .about-stats .progress-bar {
+    flex-direction: column !important;
+    position: relative !important;
+    align-items: center;
+    left: 85px !important;
+  }
+  .about-stats .progress-title {
+    padding: 1rem !important;
+  }
+  .contact-content-con {
+    padding: 0 !important;
+  }
+  .contact-item {
+    flex-direction: column;
+    margin: 1rem 0;
+  }
+  .contact-item p {
+    font-size: 15px;
+  }
+  .contact-item span {
+    font-size: 15px;
+  }
+  .contact-item .icon {
+    grid-template-columns: 25px 1fr;
+  }
+  .contact-item .i {
+    font-size: 15px;
+  }
+  .main-title h2 {
+    font-size: 2rem;
+  }
+  .main-title h2 span {
+    font-size: 2.3rem;
+  }
 }/*# sourceMappingURL=styles.css.map */

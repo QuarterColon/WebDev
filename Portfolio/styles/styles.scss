@@ -1,3 +1,4 @@
+
 *{
     margin : 0;
     padding: 0;
@@ -292,13 +293,8 @@ section{
 }
 
 .about-stats{
-    padding-bottom: 4rem;
-
+    position: relative;
     .progress-bars{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        
-        gap: 2rem;
         .progress-bar{
             display: flex;
             flex-direction: row;
@@ -306,7 +302,7 @@ section{
                 font-weight: 600;
                 color: var(--color-secondary);
                 text-transform: uppercase;
-                padding: 10%;
+                padding: 5%;
             }
         }
     }
@@ -347,7 +343,7 @@ section{
     display: flex;
     padding-top: 3.5rem;
     .left-contact{
-        flex: 2;
+        flex: 1;
     }
     h4{
         margin-bottom: 2rem;
@@ -426,3 +422,5 @@ section{
 
     }
 }
+
+@import './media';
