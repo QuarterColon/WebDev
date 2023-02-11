@@ -300,6 +300,7 @@ section{
         .progress-bar{
             display: flex;
             flex-direction: row;
+            padding-bottom: 20%;
             .progress-title{
                 font-weight: 600;
                 color: var(--color-secondary);

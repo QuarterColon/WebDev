@@ -290,6 +290,7 @@ section {
 .about-stats .progress-bars .progress-bar {
   display: flex;
   flex-direction: row;
+  padding-bottom: 20%;
 }
 .about-stats .progress-bars .progress-bar .progress-title {
   font-weight: 600;
@@ -436,18 +437,23 @@ section {
   .about-container {
     grid-template-columns: 1fr;
   }
-  .about-container .right-about {
+  .left-about {
+    padding-right: 0;
+  }
+  .left-about p {
+    padding-left: 0;
+  }
+  .right-about {
     grid-template-columns: 1fr;
     padding-top: 0 !important;
   }
-  .about-container .section {
+  .section {
     padding: 2rem 2.5rem !important;
   }
   .about-stats .progress-bar {
     flex-direction: column !important;
     position: relative !important;
     align-items: center;
-    left: 85px !important;
   }
   .about-stats .progress-title {
     padding: 1rem !important;
